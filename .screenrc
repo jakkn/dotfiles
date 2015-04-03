@@ -1,0 +1,12 @@
+term xterm-color # apply colorcoding for bash instance in screen
+
+#vbell_msg "bell: window~%" # Message for visual bell
+#vbellwait 2 # Seconds to pause the screen for visual bell
+vbell off # Turns visual bell off
+
+#split -v
+#next
+#screen
+#split
+#next
+#screen
