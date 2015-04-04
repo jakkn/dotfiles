@@ -27,3 +27,8 @@ alias tls='tmux ls'
 alias du='du -h'
 alias dud='du -had1'
 alias df='df -h'
+
+# pushd and popd
+alias +='pushd'
+alias -='popd'
+
