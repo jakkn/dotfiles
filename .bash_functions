@@ -1,6 +1,6 @@
 #! /bin/bash
 
-# My functions
+# show terminal color coding
 show_cc()
 {
     echo "no:global default;fi:normal file;di:directory;ln:symbolic link;pi:named pipe;so:socket;do:door;bd:block device;cd:character device;or:orphan symlink;mi:missing file;su:set uid;sg:set gid;tw:sticky other writable;ow:other writable;st:sticky;ex:executable;" | sed -e 's/:/="/g; s/\;/"\n/g';
@@ -10,6 +10,7 @@ show_cc()
     done
 }
 
+# color code manual pages
 man()
 {
     env LESS_TERMCAP_mb=$'\E[01;31m' \
@@ -23,3 +24,20 @@ man()
 }
 
 
+# dir count in dir
+dcount()
+{
+    ls -l $1 | grep --count ^d
+}
+
+# file count in dir
+fcount()
+{
+    ls -l $1 | grep --count ^-
+}
+
+# link count in dir
+lcount()
+{
+    ls -l $1 | grep --count ^l
+}
