@@ -33,5 +33,5 @@ alias df='df -h'
 
 # pushd and popd
 alias +='pushd'
-alias -='popd'
+alias _='popd'
 
