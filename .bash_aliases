@@ -35,3 +35,10 @@ alias df='df -h'
 alias +='pushd'
 alias _='popd'
 
+# tree
+alias tre='tree --prune -lP'
+
+# 'cat' with syntax highlighting.
+# to colorize other output, use grcat. Ex: grcat ping some.random.address
+#alias ccat='pygmentize -g'
+alias ccat='highlight -O ansi'
