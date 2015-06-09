@@ -1,0 +1,28 @@
+#! /bin/bash
+
+shopt -s dotglob
+for target in *; do
+	
+	# skip directories in repo
+  if [ ! -f $target ]; then
+  	echo "Skipping $target (directory)."
+  else
+		link_name="$HOME/$target"
+  	# skip non-dotfiles in repo
+  	if [[ ! $target == .* ]]; then
+    	echo "Skipping $target (not a dotfile)."
+    else
+			# skip existing
+	  	if [ -e "$link_name" ]; then
+	  		if [ ! -L "$link_name" ]; then
+	      	echo "WARNING: $link_name exists but is not a symlink."
+	    	else
+	    		echo "Skipping $target (symlink already exists)."
+    		fi
+		  else
+	    	echo "Creating $link_name"
+	    	ln -s "$PWD/$target" "$link_name"
+	    fi
+    fi
+  fi
+done
