@@ -1,8 +1,20 @@
 #! /bin/bash
 
+promptyn () {
+    while true; do
+        read -p "$1 " yn
+        case $yn in
+            [Yy]* ) return 0;;
+            [Nn]* ) return 1;;
+            * ) echo "Please answer yes or no.";;
+        esac
+    done
+}
+
+# enable looping dotfiles
 shopt -s dotglob
+
 for target in *; do
-	
 	# skip directories in repo
   if [ ! -f $target ]; then
   	echo "Skipping $target (directory)."
@@ -12,17 +24,24 @@ for target in *; do
   	if [[ ! $target == .* ]]; then
     	echo "Skipping $target (not a dotfile)."
     else
-			# skip existing
+			# prompt user to delete existing
 	  	if [ -e "$link_name" ]; then
+	  		# print warning
 	  		if [ ! -L "$link_name" ]; then
 	      	echo "WARNING: $link_name exists but is not a symlink."
 	    	else
-	    		echo "Skipping $target (symlink already exists)."
+	    		echo "WARNING: $link_name symlink already exists."
     		fi
-		  else
-	    	echo "Creating $link_name"
-	    	ln -s "$PWD/$target" "$link_name"
+    		# delete existing
+				if promptyn "Do you wish to delete the file?"; then
+					rm "$link_name"
+				else
+					continue
+				fi
 	    fi
+			# create link
+    	echo "Creating $link_name"
+    	ln -s "$PWD/$target" "$link_name"
     fi
   fi
 done
