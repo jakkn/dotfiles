@@ -2,6 +2,7 @@
 
 # dirs
 alias dirs='dirs -v'
+alias d='dirs'
 
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
