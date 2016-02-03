@@ -47,3 +47,6 @@ alias ccat='highlight -O ansi'
 # search open ssh hosts on network
 # example use: mapssh 10.0.0.0/24
 alias mapssh='nmap -p22 --open -PN -sV -oG ssh_hosts'
+
+# invert display colors
+alias invert='xcalib -invert -alter'
