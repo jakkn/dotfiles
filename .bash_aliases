@@ -47,3 +47,15 @@ alias ccat='highlight -O ansi'
 # search open ssh hosts on network
 # example use: mapssh 10.0.0.0/24
 alias mapssh='nmap -p22 --open -PN -sV -oG ssh_hosts'
+
+# ssh aliases
+alias ssh='TERM=xterm ssh'
+
+# dtach dvtm sessions
+#alias irssisession='dtach -c /tmp/irssi-session -r winch dvtm'
+#alias defaultsession='dtach -c /tmp/default-session -r winch dvtm'
+
+# docker aliases
+alias dps='docker ps -a'
+alias dim='docker images'
+
