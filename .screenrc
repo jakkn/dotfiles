@@ -10,3 +10,6 @@ vbell off # Turns visual bell off
 #split
 #next
 #screen
+
+#don't clear terminal window after vim, less, etc.
+altscreen on
