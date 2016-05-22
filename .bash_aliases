@@ -50,6 +50,7 @@ alias mapssh='nmap -p22 --open -PN -sV -oG ssh_hosts'
 
 # ssh aliases
 alias ssh='TERM=xterm ssh'
+alias ssh-keyprint='ssh-keygen -E md5 -lf'
 
 # dtach dvtm sessions
 #alias irssisession='dtach -c /tmp/irssi-session -r winch dvtm'
