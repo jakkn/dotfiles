@@ -59,4 +59,4 @@ export HISTFILE=~/.bash_eternal_history
 PROMPT_COMMAND="history -a; $PROMPT_COMMAND"
 
 #PATH
-export PATH=$PATH:$HOME/.gem/ruby/2.3.0/bin/
+hash ruby 2>/dev/null && PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
