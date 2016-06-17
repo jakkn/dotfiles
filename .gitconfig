@@ -49,13 +49,15 @@
 [merge]
     tool = meld
     conflictstyle = diff3
-
 [mergetool "unityyamlmerge"]
     trustExitCode = false
     cmd = '/opt/Unity/Editor/Data/Tools/UnityYAMLMerge' merge -p "$BASE" "$REMOTE" "$LOCAL" "$MERGED"
-
 [mergetool "meld"]
     cmd = meld --diff "$BASE" "$LOCAL" --diff "$BASE" "$REMOTE" --diff "$LOCAL" "$BASE" "$REMOTE" "$MERGED"
+    trustExitCode = false
+[mergetool "kdiff3"]
+    cmd = kdiff3 $BASE $LOCAL $REMOTE
+    trustExitCode = false
 
 # alias {{{
 [alias]
@@ -161,3 +163,4 @@
     ra = "!f() { git remote add $1 https://bitbucket.org/$2.git; }; f"
     # }}}
 # }}}
+
