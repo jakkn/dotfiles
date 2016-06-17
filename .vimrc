@@ -9,3 +9,4 @@ map l <Up>
 map ø <Right>
 set ignorecase
 set smartcase
+set history=1000
