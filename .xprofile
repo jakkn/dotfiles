@@ -1,0 +1,5 @@
+setxkbmap no
+
+[ -s ~/.Xmodmap ] && xmodmap ~/.Xmodmap
+[ -s ~/.xbindkeysrc ] && xbindkeys
+
