@@ -61,9 +61,6 @@ alias ssh-keyprint='ssh-keygen -E md5 -lf'
 alias dps='docker ps -a'
 alias dim='docker images'
 
-# invert display colors
-alias invert='xcalib -invert -alter'
-
 # get current public ip
 alias myip="curl icanhazip.com"
 
