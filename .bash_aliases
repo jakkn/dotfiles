@@ -63,3 +63,7 @@ alias dim='docker images'
 
 # invert display colors
 alias invert='xcalib -invert -alter'
+
+# get current public ip
+alias myip="curl icanhazip.com"
+
