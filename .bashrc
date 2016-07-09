@@ -58,5 +58,6 @@ export HISTFILE=~/.bash_eternal_history
 # http://superuser.com/questions/20900/bash-history-loss
 PROMPT_COMMAND="history -a; $PROMPT_COMMAND"
 
-#PATH
+#Environment variables
 hash ruby 2>/dev/null && PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
+hash ruby 2>/dev/null && export GEM_HOME=$(ruby -e 'print Gem.user_dir')
