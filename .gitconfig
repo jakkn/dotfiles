@@ -114,6 +114,7 @@
     sl = stash list
     sa = stash apply
     ss = stash save
+    sp = stash pop
     # }}}
     # assume aliases {{{
     assume = update-index --assume-unchanged
