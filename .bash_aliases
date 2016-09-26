@@ -64,3 +64,5 @@ alias dim='docker images'
 # get current public ip
 alias myip="curl icanhazip.com"
 
+# print all pdfs in folder
+alias printallpdf="for f in *.pdf; do lpr $f; done"
