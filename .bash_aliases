@@ -66,3 +66,6 @@ alias myip="curl icanhazip.com"
 
 # print all pdfs in folder
 alias printallpdf="for f in *.pdf; do lpr $f; done"
+
+# advanced git commands
+alias git-prune-br="git branch --merged | egrep -v \"(^\*|master|dev)\" | xargs git branch -d"
