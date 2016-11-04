@@ -67,5 +67,10 @@ alias myip="curl icanhazip.com"
 # print all pdfs in folder
 alias printallpdf="for f in *.pdf; do lpr $f; done"
 
-# advanced git commands
+# git aliases
 alias git-prune-br="git branch --merged | egrep -v \"(^\*|master|dev)\" | xargs git branch -d"
+alias gst="git st"
+alias gls="git ls"
+alias gls10="gls -10"
+alias gls20="gls -20"
+
