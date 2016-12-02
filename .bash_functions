@@ -41,3 +41,11 @@ lcount()
 {
     ls -l $1 | grep --count ^l
 }
+
+# check out the first branch matching the given input string
+git-cobr()
+{
+    branch=`git branch --all --list *$1* | head -n 1 | sed -e 's/remotes\/origin\///g'`
+    git checkout $branch
+}
+
