@@ -16,9 +16,10 @@
     status = auto
 
 [color "branch"]
-    current = red reverse
-    local = blue
-    remote = green
+    current = green
+    local = cyan
+    remote = red
+    plain = normal
 
 [color "diff"]
     meta = yellow
@@ -81,9 +82,9 @@
     caa = commit -a --amend -C HEAD
     # }}}
     # log commands {{{
-    ls = log --pretty=format:"%C(green)%h\\ %C(yellow)[%ad]%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=relative
-    ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
-    ll1 = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat -1
+    ls = log --pretty=format:"%C(green)%h\\ %C(yellow)[%ad]%Cred%d\\ %Creset%s%C(cyan)\\ [%cn]" --decorate --date=relative
+    ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%C(cyan)\\ [%cn]" --decorate --numstat
+    ll1 = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%C(cyan)\\ [%cn]" --decorate --numstat -1
     lnc = log --pretty=format:"%h\\ %s\\ [%cn]"
     hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
     lc  = "!f() { git ll "$1"^.."$1"; }; f"
