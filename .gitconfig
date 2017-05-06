@@ -42,7 +42,7 @@
 [diff]
     mnemonicprefix = true
 [branch]
-    autosetuprebase = always
+#    autosetuprebase = always
 [apply]
     whitespace = nowarn
 #}}}
