@@ -54,7 +54,7 @@
     trustExitCode = false
     cmd = '/opt/Unity/Editor/Data/Tools/UnityYAMLMerge' merge -p "$BASE" "$REMOTE" "$LOCAL" "$MERGED"
 [mergetool "meld"]
-    cmd = meld --diff "$BASE" "$LOCAL" --diff "$BASE" "$REMOTE" --diff "$LOCAL" "$BASE" "$REMOTE" "$MERGED"
+    cmd = meld "$LOCAL" "$MERGED" "$REMOTE" --output "$MERGED"
     trustExitCode = false
 [mergetool "kdiff3"]
     cmd = kdiff3 $BASE $LOCAL $REMOTE
