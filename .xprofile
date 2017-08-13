@@ -2,4 +2,5 @@ setxkbmap no
 
 [ -s ~/.Xmodmap ] && xmodmap ~/.Xmodmap
 [ -s ~/.xbindkeysrc ] && xbindkeys
+[ -s ~/.multi-monitors ] && ~/.multi-monitors
 
