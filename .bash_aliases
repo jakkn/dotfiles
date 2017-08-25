@@ -37,6 +37,13 @@ alias df='df -h'
 alias +='pushd'
 alias _='popd'
 
+# cd
+alias ..="cd ../"
+alias ...="cd ../.."
+alias ....="cd ../../../"
+alias .....="cd ../../../.."
+alias ......="cd ../../../../.."
+
 # tree
 alias tre='tree --prune -lP'
 
