@@ -81,3 +81,6 @@ alias gls="git ls"
 alias gls10="gls -10"
 alias gls20="gls -20"
 
+# thefuck alias
+eval $(thefuck --alias)
+
