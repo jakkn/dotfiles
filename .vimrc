@@ -10,3 +10,5 @@ map ø <Right>
 set ignorecase
 set smartcase
 set history=1000
+
+imap jj <Esc>
