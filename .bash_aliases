@@ -49,8 +49,8 @@ alias tre='tree --prune -lP'
 
 # 'cat' with syntax highlighting.
 # to colorize other output, use grcat. Ex: grcat ping some.random.address
-#alias ccat='pygmentize -g'
-alias ccat='highlight -O ansi'
+alias ccat='pygmentize -g'
+#alias ccat='highlight -O ansi'
 
 # search open ssh hosts on network
 # example use: mapssh 10.0.0.0/24
