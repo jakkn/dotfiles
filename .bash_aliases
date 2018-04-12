@@ -84,3 +84,6 @@ alias gls20="gls -20"
 # thefuck alias
 eval $(thefuck --alias)
 
+# screenshot alias
+alias sshot="maim -s ~/Pictures/$(date "+%Y%m%d-%H%M%S").jpg"
+
