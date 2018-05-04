@@ -80,6 +80,7 @@ alias gst="git st"
 alias gls="git ls"
 alias gls10="gls -10"
 alias gls20="gls -20"
+alias gd="git d"
 
 # thefuck alias
 eval $(thefuck --alias)
