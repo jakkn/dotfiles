@@ -21,6 +21,11 @@ if [ -x /usr/bin/dircolors ]; then
     alias egrep='egrep --color=auto'
 fi
 
+# prefer exa over ls when present
+if [ -x ~/.cargo/bin/exa ]; then
+    alias ls=exa
+fi
+
 # less
 alias less='less -N'
 
