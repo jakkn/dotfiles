@@ -93,3 +93,6 @@ eval $(thefuck --alias)
 # screenshot alias
 alias sshot="maim -s ~/Pictures/$(date "+%Y%m%d-%H%M%S").jpg"
 
+# nwn alias
+alias nwn-build="docker run --rm -it --user $UID:$UID -v \"$(pwd):/home/devbase/build\" jakkn/nwn-devbase"
+
