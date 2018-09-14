@@ -39,6 +39,7 @@
     default = upstream
 [pull]
     default = current
+	rebase = true
 [diff]
     mnemonicprefix = true
 [branch]
@@ -64,6 +65,7 @@
 [alias]
     cl = clone
     co = checkout
+    s = status -s
     st = status -s
     br = branch
     r = reset
@@ -165,4 +167,7 @@
     ra = "!f() { git remote add $1 https://bitbucket.org/$2.git; }; f"
     # }}}
 # }}}
+
+[rerere]
+	enabled = true
 
