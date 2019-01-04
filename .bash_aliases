@@ -27,7 +27,7 @@ if [ -x ~/.cargo/bin/exa ]; then
 fi
 
 # less
-alias less='less -N'
+#alias less='less -N'
 
 # screen/tmux
 alias sls='screen -ls'
