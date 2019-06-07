@@ -2,7 +2,7 @@
 
 # core {{{
 [core]
-    editor = /usr/bin/vim
+    editor = vim
 #}}}
 # user {{{
 [user]
