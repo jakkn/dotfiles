@@ -1,13 +1,11 @@
+[include]
+    path = .gitconfig.local
+
 # courtesy of durdn: https://github.com/durdn/cfg/blob/master/.gitconfig
 
 # core {{{
 [core]
     editor = vim
-#}}}
-# user {{{
-[user]
-    email = jakobknutsen@gmail.com
-    name = Jakob Knutsen
 #}}}
 # color {{{
 [color]
