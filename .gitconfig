@@ -66,6 +66,7 @@
     s = status -s
     st = status -s
     br = branch
+    bra = branch -a
     r = reset
     cp = cherry-pick
     gr = grep -Ii
