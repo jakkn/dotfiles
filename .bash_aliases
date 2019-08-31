@@ -22,7 +22,7 @@ if [ -x /usr/bin/dircolors ]; then
 fi
 
 # prefer exa over ls when present
-if [ -x ~/.cargo/bin/exa ]; then
+if [ -x "$(command -v exa)" ]; then
     alias ls=exa
 fi
 
