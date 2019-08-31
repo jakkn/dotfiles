@@ -61,3 +61,11 @@ PROMPT_COMMAND="history -a; $PROMPT_COMMAND"
 #Environment variables
 hash ruby 2>/dev/null && PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
 hash ruby 2>/dev/null && export GEM_HOME=$(ruby -e 'print Gem.user_dir')
+
+if [ -f /usr/share/fzf/completion.bash ]; then
+    source /usr/share/fzf/completion.bash
+fi
+if [ -f /usr/share/fzf/key-bindings.bash ]; then
+    source /usr/share/fzf/key-bindings.bash
+fi
+
